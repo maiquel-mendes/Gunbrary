@@ -9,7 +9,8 @@
 </form>
 <div>
 <% guns.forEach(gun => { %>
-    <img height="150" width="150" src="<%= gun.coverImagePath %>" alt="">
+    <label><%= gun.model %></label>
+    <img height="150" width="150" src="<%= gun.coverImagePath %>">
 <% }) %>
 
 </div>

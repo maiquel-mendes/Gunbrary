@@ -1,1 +1,9 @@
-meio
+<h1>Recently Add</h1>
+
+<div>
+    <% guns.forEach(gun => { %>
+        <label><%= gun.model %></label>
+        <img height="150" width="150" src="<%= gun.coverImagePath %>">
+    <% }) %>
+    
+    </div>
