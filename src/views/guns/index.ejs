@@ -1,0 +1,15 @@
+<h2>Search Guns</h2>
+<form action="/guns" method="get">
+<div>
+    <label for="">Model</label>
+    <input type="text" name="model" value="<%= searchOptions.model %>">
+
+</div>
+    <button type="submit">Search</button>
+</form>
+<div>
+<% guns.forEach(gun => { %>
+    <img height="150" width="150" src="<%= gun.coverImagePath %>" alt="">
+<% }) %>
+
+</div>

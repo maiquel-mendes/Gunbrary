@@ -1,0 +1,29 @@
+<div>
+    <label for="">Model</label>
+    <input type="text" name="model" value="<%= gun.model%>">
+</div>
+<div>
+    <label for="">Manufacturer</label>
+    <select name="brand" id="">
+        <% brands.forEach(brand => { %>
+            <% if (brand.id === gun.brand) { %>
+                <option selected label="<%= brand.name %>" value="<%= brand.id %>">
+            <% } else { %>
+                <option label="<%= brand.name %>" value="<%= brand.id %>">
+            <% } %>
+        <% }) %>
+    </select>
+</div>
+
+<div>
+    <label for="">Caliber</label>
+    <input type="text" name="caliber" value="<%= gun.caliber%>">
+</div>
+<div>
+    <label for="">Image</label>
+    <input type="file" name="image">
+</div>
+<div>
+    <label for="">Description</label>
+    <textarea name="description"><%= gun.description%></textarea>
+</div>
