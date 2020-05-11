@@ -4,7 +4,7 @@ const multer = require('multer')
 const fs = require('fs')
 const path = require('path')
 const Gun = require('../models/gun')
-const uploadPath = path.join('public', Gun.coverImageBasePath)
+const uploadPath = path.join('src/public', Gun.coverImageBasePath)
 const imageMimeTypes = ['image/jpeg', 'image/png', 'image/gif']
 const Brand = require('../models/brand')
 
